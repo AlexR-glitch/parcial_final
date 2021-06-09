@@ -1,0 +1,1 @@
+export {default as HeaderD} from './header_menor';

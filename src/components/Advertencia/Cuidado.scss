@@ -1,0 +1,38 @@
+@import '../../sass/variables';
+
+.CuidaoChico{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    background: $rojo;
+    clip-path: polygon(0% 0%, 0% 100%, 53% 100%, 63% 92%, 100% 92%, 100% 0%);
+    .quemao{
+        width: 100%;
+        height: 98.5%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background: url(../../bg03.jpg);
+        background-size: cover;
+        background-position: bottom;
+        clip-path: polygon(0% 0%, 0% 100%, 53% 100%, 63% 92%, 100% 92%, 100% 0%);
+            h1{
+                width: 50%;
+                height: fit-content;
+                text-align: center;
+                color: $rojo;
+                margin-bottom: 1.5rem;
+                font-size: 2.5rem;
+                background: none;
+            }
+            p{
+                width: 75%;
+                height: fit-content;
+                text-align: justify;
+                color: $azul;
+                font-size: 1.2rem;
+                background: none;
+            }
+        }
+    }

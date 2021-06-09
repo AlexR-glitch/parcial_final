@@ -1,0 +1,63 @@
+@import '../../sass/variables';
+
+.menu{
+    padding: 0;
+    width: 100%;
+    height: 70px;
+    background: $azul;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border-bottom: solid $rojo;
+    border-width: .4rem;
+    position: fixed;
+    z-index: 1;
+    .logo{
+        padding: 1rem;
+        width: 25%;
+        display: flex;
+        height: 100%;
+        flex-direction: row;
+        font-style: italic;
+        align-items: center;
+        justify-content: center;
+        h1{
+            color:$blanco;
+            font-weight: lighter;
+            height: fit-content;
+            width: fit-content;
+            font-size: 2rem;
+            margin-right: .5rem;
+        }
+        h2{
+            color:$rojo;
+            font-weight: bold;
+            height: fit-content;
+            width: fit-content;
+            font-size: 2rem;
+        }
+    }
+    .enlaces{
+        width: 60%;
+        height: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        .cadena{
+            color: $blanco;
+            text-decoration: none;
+            width: 33%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 1.3rem;
+            &:hover{
+                background: $rojo;
+                clip-path: polygon(10% 0, 100% 0%, 90% 100%, 0% 100%);
+            }
+        }
+    }
+}
+
