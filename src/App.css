@@ -5,5 +5,11 @@
   padding: 0 ;
   box-sizing: border-box;
   font-family: Verdana, sans-serif;
-  background: #083a81;
+}
+
+header{
+  background: #083A81;
+}
+section{
+  background: #083A81;
 }

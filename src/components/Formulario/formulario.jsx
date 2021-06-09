@@ -1,4 +1,5 @@
 import {isEmpty, isEmail} from 'validator';
+import './Formulario.scss'
 
 export default function Formulario(){
     return(

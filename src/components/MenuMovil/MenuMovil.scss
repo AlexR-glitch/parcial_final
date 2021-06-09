@@ -1,2 +1,147 @@
 @import '../../sass/variables';
 
+.menumovil{
+    width: 100%;
+    height: 80px;
+    background: $azul;
+    border-bottom: solid $rojo;
+    border-width: 7px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1400;
+    .contenedor{
+        height: 100%;
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1rem;
+        .logo{
+            height: fit-content;
+            width: 59%;
+            display: flex;
+            flex-direction: row;
+            justify-content:flex-start;
+            align-items: center;
+            h1{
+                height: fit-content;
+                width: fit-content;
+                color: $blanco;
+                font-style: italic;
+                font-weight: lighter;
+                font-size: 1.9rem;
+            }
+            h2{
+                height: fit-content;
+                width: fit-content;
+                color: $rojo;
+                font-style: italic;
+                font-weight: lighter;
+                font-size: 1.9rem;
+            }
+        }
+        .btn{
+            width: fit-content;
+            color: $blanco;
+            height: fit-content;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: none;
+            i{
+                width: fit-content;
+                height: fit-content;
+                font-size: 1.9rem;
+            }
+        }
+    }
+}
+
+.blur{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    background: rgba(0, 0, 0, 0);
+    backdrop-filter: blur(0px);
+    position: fixed;
+    top: 0;
+    left: 0;
+    pointer-events: none;
+    z-index: 1100;
+    transition: ease-in-out .5s;}
+
+    .blur.activo{
+        background: rgba(0, 0, 0, .65);
+        backdrop-filter: blur(12px);
+        pointer-events: all;}
+
+.enlacesmoviles{
+    position: fixed;
+    top: 0;
+    left: -80%;
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: $rojo;
+    z-index: 1200;
+    transition: ease-in-out .5s;
+    .cadena{
+        font-size: 1.5rem;
+        text-decoration: none;
+        color: $blanco;
+        text-align: center;
+        height: auto;
+        padding: 2.5rem 2rem;
+        margin: .5rem;
+        background: none;
+        &:hover{
+            background: $rojo2;
+        }
+    }
+}
+
+
+.enlacesmoviles.activo{
+    left: 0%;
+}
+
+
+@media screen and(min-width: 700px){
+    .menumovil{
+        .contenedor{
+            padding: 0 3rem;
+            .logo{
+                width: 35%;
+                h1{
+                    font-size: 2rem;
+                }
+                h2{
+                    font-size: 2rem;
+                }
+            }
+            .btn{
+                i{
+                    font-size: 2rem;
+                }
+            }
+        }
+    }
+    .enlacesmoviles{
+        width: 50%;
+        .cadena{
+            font-size: 1.9rem;
+            padding: 2rem 1.5rem;
+        }
+    }
+}
+
+@media screen and(min-width: 1000px){
+    .menumovil{
+        display: none;
+    }
+}

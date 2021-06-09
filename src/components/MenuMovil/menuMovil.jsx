@@ -1,5 +1,6 @@
 import{useState, useEffect} from 'react';
 import{Link} from 'react-router-dom';
+import './MenuMovil.scss'
 
 export default function MenuMovil() {
 
@@ -21,7 +22,7 @@ export default function MenuMovil() {
 
     return(
         <>
-            {/*<nav className="menu menumovil">
+            <nav className="menumovil">
                 <div className="contenedor">
                     <div className="logo">
                         <h1>AIRWAY</h1>
@@ -40,7 +41,7 @@ export default function MenuMovil() {
                 <Link to="/" className="cadena" onClick={aMenu}>Home</Link>
                 <Link to="/About" className="cadena" onClick={aMenu}>Acerca de</Link>
                 <Link to="/contact" className="cadena" onClick={aMenu}>Contacto</Link>
-            </div>*/}
+            </div>
         </>
     )
 }

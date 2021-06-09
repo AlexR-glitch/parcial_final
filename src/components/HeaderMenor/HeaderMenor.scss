@@ -5,24 +5,53 @@
     background: $rojo;
     display: flex;
     align-items: flex-start;
-    clip-path: polygon(0% 0%, 0% 100%, 53% 100%,63% 92%, 100% 92%, 100% 0%);
+    clip-path: polygon(0% 0%, 0% 100%, 53% 100%,63% 95%, 100% 95%, 100% 0%);
     .interior{
         width: 100%;
         height: 99%;
         background: url(https://images.pexels.com/photos/249581/pexels-photo-249581.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
         background-size: cover;
         background-position: center;
-        clip-path: polygon(0% 0%, 0% 99.5%, 53% 99.5%, 63% 91.5%, 100% 91.5%, 100% 0%);
+        clip-path: polygon(0% 0%, 0% 100%, 52% 100%, 62% 95%, 100% 95%, 100% 0%);
         display: flex;
         justify-content: center;
         align-items: center;
         h1{
-            width: 60%;
+            width: 79%;
             height: fit-content;
-            font-size: 2.5rem;
+            font-size: 1.5rem;
             color: $rojo;
             text-align: center;
             background: none;
+        }
+    }
+}
+
+@media screen and(min-width: 700px){
+    .texto{
+        .interior{
+            h1{
+                width: 80%;
+                font-size: 2rem;
+                color: $rojo;
+                margin-bottom: 200px;
+            }
+        }
+    }
+}
+
+@media screen and(min-width:1000px){
+    .texto{
+        clip-path: polygon(0% 0%, 0% 100%, 53% 100%,63% 94%, 100% 94%, 100% 0%);
+        .interior{
+            height: 98.5%;
+            clip-path: polygon(0% 0%, 0% 100%, 53% 100%, 63% 94%, 100% 94%, 100% 0%);
+            h1{
+                width: 55%;
+                font-size: 2.5rem;
+                text-align: center;
+                margin-top: 8rem;
+            }
         }
     }
 }
