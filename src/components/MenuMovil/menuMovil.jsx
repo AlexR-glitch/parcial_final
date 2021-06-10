@@ -14,12 +14,13 @@ export default function MenuMovil() {
     function aMenu(){
         setMenu(!menu);
     }
+
     function filtrarTecla(e) {
+        // eslint-disable-next-line 
         if(e.code=='Escape' && menu){
             aMenu();
         }
     }
-
     return(
         <>
             <nav className="menumovil">
